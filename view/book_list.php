@@ -7,7 +7,7 @@
 ?>
 <br>
 <div class="bordeTabla">
-	<h3>Lista de Productos</h3>
+	<h3>Lista de Jugadores</h3>
 <div class="tablaScroll">
 
 		<table id="registros" class="tabla" cellspacing="0" width="100%">

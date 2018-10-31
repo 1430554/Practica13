@@ -1,4 +1,5 @@
 <?php 
+//Se incluyen el header y menu que traen las opciones para navegaer en el sitio.
 	include_once "header.php";
 	if($logged_in)
 	{
@@ -14,17 +15,20 @@
 	<div class="continer">
 		<form method="post">
 			<div class="cuerpo">
-				<h3>Modificar Productos</h3>
+				<h3>Modificar Jugador</h3>
 				<p>Llene los siguientes campos.</p>
-				<label for="title">Producto</label>
+				
+				<!-- Bboton eliminar que redirecciona al archivo book_delete tomandoel id del producto para confirmar la eliminacion -->
+
+				<label for="title">Nombre</label>
 				<input type="text" name="title" id="title" value="<?php echo $book[0]["title"]; ?>">
 				<font color="red"><?php echo $errors["title"]; ?></font>
 				<br>
-				<label for="author">Descripción</label>
+				<label for="author">Deporte</label>
 				<input type="text" name="author" id="author" value="<?php echo $book[0]["author"]; ?>">
 				<font color="red"><?php echo $errors["author"]; ?></font>
 				<br>
-				<label for="description">Cantidad</label>
+				<label for="description">Matricula</label>
 				<input type="description" name="description" id="description" value="<?php echo $book[0]["description"]; ?>">
 				<font color="red"><?php echo $errors["description"]; ?></font>
 				<br>
@@ -44,7 +48,7 @@
 <br>
 		<div class="container">
 			<div class="bienvenida">
-				<h3>Producto Actualizado</h3>
+				<h3>Jugador Actualizado</h3>
 			</div>
 		</div>
 <?php

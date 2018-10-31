@@ -1,22 +1,31 @@
 <?php 
+//Estilos traidos de header asi como fondo
 	include_once "header.php";
 	if($logged_in)
 	{
 		$after_login=true;
+		//Importacion del menu para navegacion del sistema
 		include_once "menu.php";
 ?>
 
 <?php
+//Añadir jugadores guardandolos en los campos designados de la base de datos.
 		if($status=="before_submission" or $status=="failure")
 		{
+
+
+/*En esta vista se agregan  y se muestran los productos almacenandolos en la base de datos 
+se incluyen las vistas header y menu que son las que traen los elementos del menu para 
+la navegacion del sistema asi como el fondo del mismo*/
+
 ?>
 <br>
 <br>
-
 	<div class="container">
 	 	
 		<form method="post">
 			<div class="cuerpo">
+
 				<h3>Registrar un Nuevo Jugador</h3>
 				<p>Llene los siguientes campos</p>
 				<label for="title">Nombre</label>

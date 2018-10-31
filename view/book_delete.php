@@ -1,14 +1,20 @@
 <?php 
+//Estilos traidos de header asi como fondo
+
 	include_once "header.php";
 	if($logged_in)
 	{
 		$after_login=true;
+		//Importacion del menu para navegacion del sistema
 		include_once "menu.php";
 ?>
 
 <?php
 		if($status=="before_submission" or $status=="failure")
 		{
+
+
+			//A continuacion se eliminan los productos imprimiendo con la funcion "echo" el nombre del preducto almacenado en la variable "$book" traido de la base de datos en el campo "title" y con "option value" se pregunta si realmente desea eliminar el producto asi mismo se toma el id de dicho producto y se elimina en la base de datos.
 ?>
 <br>
 	<div class="container">
